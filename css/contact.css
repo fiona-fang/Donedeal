@@ -1,0 +1,128 @@
+
+		body{
+			padding: 0;
+			margin: 0;
+			background: url(../images/form_background.jpg);
+		}
+		
+		nav{
+			display: flex;
+			flex-direction:column;
+			font-family: Montserrat, Arial, sans-serif;
+		}
+
+		a{
+			border-bottom: 1px solid white;
+			text-align: center;
+			color: teal;
+			padding: 5px 0;
+			text-decoration: none;
+		}
+
+		#logoNav	{
+			font-size: 20px;
+			font-family: Sigmar One, Arial, sans-serif;
+		}
+		fieldset{
+			display: block;
+			width: 350px;
+			border: 1ppx solid #fff;
+			border-radius: 20px;
+			padding: 20px;
+			margin-top: 20px;
+			background-color: rgba(129, 187, 201, .2);
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#loginLogo {
+			font-family: sans-serif;
+			font-size: 25px;
+		}
+		#regLogo {
+			font-family: sans-serif;
+			font-size: 25px;
+
+		}
+		label {
+			display: block;
+    		font-size: 16px;
+    		text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0 #CDCCC6;
+    		margin: 0 0 5px;
+    		text-align: left;
+    		 color: #9A9995;
+		}
+		label.field {
+			display: block;
+			font-family: sans-serif;
+			margin-bottom: 10px;
+			float: left;
+		}
+		fieldset p {
+			color: #9A9995;
+			text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0 #CDCCC6;
+			font-weight: bold;
+		}
+		input {
+			width:307px;
+			border-radius: 5px;
+			padding: 6px 8px;
+			margin-bottom: 15px;
+		}
+		textarea {
+			width: 320px;
+		}
+		#submit {
+			float: right;
+			width: 60%;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 25px;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+		}
+		.contactRight {
+			padding-left: 20px;
+			font-family: OpenSansBold, Arial, Helvetica, sans-serif;
+			font-weight: 400;
+		    text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0 #CDCCC6;
+		    text-transform: uppercase;
+		    color: #9A9995;
+		}
+		.contactRight h3 {
+			font-size: 24px;
+		}
+		.contactRight h4{
+			font-size: 16px;
+		}
+		address {
+			font-size: 12px;
+			background: transparent
+		}
+
+		@media screen and (min-width: 800px){
+
+			nav{
+			width: 100%;
+			flex-direction: row;
+			font-size: 20px;
+			}
+
+			a{
+				flex:1;
+				padding: 20px 0 0 0;
+				
+			}
+
+			#logoNav{
+				padding: 0 250px 0 50px;
+				font-size: 40px
+			}
+			.container {
+				flex-direction: row;
+			}
+		}

@@ -1,0 +1,146 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-image: url(../images/backgroundcover2.jpg);
+	background-size: contain;
+    }
+	.header {
+		display: flex;
+		flex-flow: row wrap;
+		background-color:lightgrey;
+	}
+	#catLogo {
+		display: flex;
+		flex-direction: row;
+	}
+	#dropdown-width {
+		margin: 10px, 20px, 10px, 10px;
+		padding-bottom: 0px;
+
+	}
+	#logoNav{
+		width: 100px;
+		font-size: 28px;
+		margin-left: 50px;
+		margin-right: 38px;
+		font-family: Sigmar One, Arial, sans-serif;
+		margin-bottom: 5px;
+		padding-bottom: 0px;
+		text-decoration: none;
+	}
+	#placeAd {
+		display: flex;
+		flex-direction: row;
+		margin-left: 50px;
+		align-items: center;
+	}
+	#login {
+		margin-left: 20px;
+	}
+	#searchSection {
+		text-align: center;
+	}
+	#noMobile {
+		display: none;
+	}
+
+	form {
+		margin-top: 20px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+	input{
+		font-size: 18px;
+		font-size: sans-serif;
+	}
+	.catDisplay {
+		display: none;
+	}
+	img {
+		height: 200px;
+		width: 200px;
+	}
+	.ads {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.ads-line {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.ads img{
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+	.footerContainer {
+		display: flex;
+		width: 100%;
+		height: 70px;
+		background-color: grey;
+		margin-top: 80px;
+		margin-bottom:0px;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	footer h1 {
+		font-size: 20px;
+		font-family: Montserrat;
+		margin-right: 20px;
+	}
+	footer img {
+		margin-right: 20px;
+		width:50px;
+		height: 50px;
+	}
+
+	@media screen and (min-width: 640px){
+		#dropdown-width {
+			display: none;
+		}
+		.btn-group a{
+			font-size: 18px;
+		}
+
+		.searchSection {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+		}
+
+		#noMobile {
+			display: inline-block;
+		}
+		#searchBar {
+			width: 250px;
+	}
+		.catDisplay {
+			display: flex;
+			justify-content: center;
+			text-align: left;
+		}
+		.catDisplay ul li{
+			list-style: none;
+			color: grey;
+			font-weight: bold;
+		}
+
+		.footerContainer{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+		}
+		footer h1{
+			font-family: sans-serif;
+			font-size: 20px;
+		}
+		footer img{
+			width: 50px;
+			height: 50px;
+		}
+	}

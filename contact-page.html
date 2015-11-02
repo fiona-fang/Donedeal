@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Change made to the file to see what happens in GitHub-->
+<html lang="en">
+	<head>
+	<meta charset="UTF-8>"
+	<link rel="stylesheet" type="text/css" href="reset-form.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat|Nunito|Sigmar+One' rel='stylesheet' type='text/css'>
+	<title>DoneDeal contact page</title>
+	<style type="text/css">
+
+
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a id="logoNav">DoneDeal</a>
+			<a href="#">Home</a>
+		</nav>
+		<section class="container">
+			<div class="contactLeft">					
+				<form id="regForm" action="server_side_script.php" method="post">
+					<fieldset>		
+						<p id="regLogo">Contact us</p>	
+						<div>			
+						<label class="field" for="name">Name:<span>*</span><label> 
+						<input id="name" type="text" name="name"/>
+						</div>	
+				
+						<div>	
+							<label class="field" for="email">E-mail:<span>*</span><label>
+							<input id="email" type="email" name="email"/>
+						</div>
+						<div>
+							<label class="field" for="contact">Contact Number:<label>
+							<input id="contact" type="number" name="contactNumber"/>
+						</div>	
+						<div>
+							<label class="field" for="message">Message:<span>*</span><label>
+							<textarea id="message" type="text" name="messageArea" cols="25" rows ="10"></textarea>
+						</div>		
+					<input id="submit" type="submit" value="submit">
+					</fieldset>	
+				</form>	
+			</div>	
+			<div class="contactRight">
+				<h3>Address & Directions:</h4>
+				<h4>Donedeal Company Ltd.</h3>
+				<address>
+					<p>17 New Row Road </br>
+						Dublin 2 </br>
+						Ireland</br>
+					</p>
+				</address>
+				<p>Telephone: </br>
+						o1 385 1795
+				</p>
+				<img width="600" src="http://maps.googleapis.com/maps/api/staticmap?center=Trinity+College+Dublin,+Dublin&zoom=13&scale=false&size=300x190&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CTrinity+College+Dublin,+Dublin" alt="Google Map of Trinity College Dublin, Dublin">
+			</div>
+		</section>
+	</body>
+</html>

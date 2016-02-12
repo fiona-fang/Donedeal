@@ -1,9 +1,0 @@
-{
-  "firebase": "fionadondeal",
-  "public": ".",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
-}

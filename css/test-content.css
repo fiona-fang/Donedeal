@@ -1,0 +1,32 @@
+.content-stream-wrap {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 960px;
+
+}
+
+.content-area {
+    float: left;
+    position: relative;
+    height: 1888px;
+
+}
+
+.column {
+    float: left;
+    margin-right: 15px;
+    position: relative;
+    width: 300px;
+    border:0;
+    vertical-align: baseline;
+}
+
+.col-1 {
+    margin-left: 15px;
+
+}
+
+.wine {
+    margin-top: 15px;
+}

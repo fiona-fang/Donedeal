@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/test-slideshow.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="diy-slideshow">
+        <figure class="show">
+            <img src="images/slideshow1.jpg" width="100%" height="548px" />
+        </figure>
+      <figure>
+        <img src="images/slideshow2.jpg" width="100%" />
+        </figure>
+        <figure>
+            <img src="images/slideshow3.jpg" width="100%" />
+        </figure>
+      <figure>
+            <img src="images/slideshow4.jpg" width="100%" />
+        </figure>
+      <figure>
+            <img src="images/slideshow5.jpg" width="100%" />
+        </figure>
+      <figure>
+            <img src="images/slideshow6.jpg" width="100%" />
+        </figure>
+      <span class="prev">&laquo;</span>
+      <span class="next">&raquo;</span>
+    </div>
+
+
+
+</body>
+
+<script>
+
+$(document).ready(function() {
+
+    var counter = 0, // to keep track of current slide
+    $items = $('.diy-slideshow figure'), // a collection of all of the slides, caching for performance
+    numItems = $items.length; // total number of slides
+
+    // this function is what cycles the slides, showing the next or previous slide and hiding all the others
+    var showCurrent = function () {
+        var itemToShow = Math.abs(counter%numItems);// uses remainder (aka modulo) operator to get the actual index of the element to show
+
+        $items.removeClass('show'); // remove .show from whichever element currently has it
+        $items.eq(itemToShow).addClass('show');
+    };
+
+    // add click events to prev & next buttons
+
+    $('.next').on('click', function () {
+        counter++;
+        showCurrent();
+    });
+    $('.prev').on('click', function () {
+        counter--;
+        showCurrent();
+    });
+
+});
+
+</script>
+</html>
